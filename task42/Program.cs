@@ -23,7 +23,7 @@ int[] ChangeToBin(int num)
 int GetNum(string text)
 {
     Console.WriteLine(text);
-    int size = int.Parse(Console.ReadLine());
+    int size = int.Parse(Console.ReadLine()!);
     return size;
 }
 

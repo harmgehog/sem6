@@ -19,7 +19,7 @@ void CheckTriangle(int A, int B, int C)
 int GetNum(string text)
 {
   Console.Write(text);
-  return int.Parse(Console.ReadLine());
+  return int.Parse(Console.ReadLine()!);
 }
 //зададим числа
 int num = GetNum("Введите длину сторона АВ: ");
