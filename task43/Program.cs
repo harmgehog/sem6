@@ -27,14 +27,15 @@ int GetNum(string text)
 void CrossLines(double b1, double k1, double b2, double k2)
 {
     try
-        {
-            double x = (b2 - b1) / (k1 - k2);
-            double y = (k2 * b1 - k1 * b2) / (k2 - k1);
-            Console.WriteLine($"The coordinates of the intersection point are: {x}; {y}.");
-        }
-        catch (DivideByZeroException) {
-            Console.WriteLine("These lines don't intersect.");
-        }
+    {
+        double x = (b2 - b1) / (k1 - k2);
+        double y = (k2 * b1 - k1 * b2) / (k2 - k1);
+        Console.WriteLine($"The coordinates of the intersection point are: {x}; {y}.");
+    }
+    catch (DivideByZeroException)
+    {
+        Console.WriteLine("These lines don't intersect.");
+    }
 }
 // get some variables from console
 int b1 = GetNum("Input b1: ");
