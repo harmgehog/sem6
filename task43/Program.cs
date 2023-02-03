@@ -8,7 +8,7 @@ Console.ForegroundColor = ConsoleColor.Green;
 /* format exception handling */
 int GetNum(string text)
 {
-    do
+    do  
     {
         try
         {
@@ -18,7 +18,7 @@ int GetNum(string text)
         }
         catch (FormatException)
         {
-            Console.WriteLine("Wrong input(need only numbers)!");
+            Console.WriteLine("Wrong input(need only digits)!");
         }
     }
     while (true);
@@ -29,7 +29,7 @@ void CrossLines(double b1, double k1, double b2, double k2)
     try
     {
         double x = (b2 - b1) / (k1 - k2);
-        double y = (k2 * b1 - k1 * b2) / (k2 - k1);
+        double y = k1 * x + b1;
         Console.WriteLine($"The coordinates of the intersection point are: {x}; {y}.");
     }
     catch (DivideByZeroException)
